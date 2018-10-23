@@ -1,0 +1,17 @@
+<div class="container-home">
+  <div class="center-box w-50 bg-warning">
+    <h2 class="pb-3">Signup</h2>
+    <form action="/signup" method="post" id="form">
+      <div>
+        <input type="text" name="username" id="username" placeholder="Username" class="w-100 p-1 mb-3">
+      </div>
+      <div>
+        <input type="password" name="password" id="password" placeholder="Password" class="w-100 p-1 mb-3">
+      </div>
+      <button type="submit" class="w-100 p-1">Create account</button>
+    </form>
+  </div>
+  {{#if errorMessage}}
+  <div class="error-message"> {{errorMessage}} </div>
+  {{/if}}
+</div>

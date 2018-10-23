@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #333;
+}
+
+a {
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  transition: 200ms all ease-in-out;
+  &::visited {
+    color: rgb(129, 129, 129);
+  }
+  &:hover {
+    color: rgba(51, 51, 51, 0.5);
+  }
+}
+
+button {
+  outline: none;
+  border: 1px solid #999;
+  color: #333;
+  background: #e9e9e9;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 300ms all ease-in-out;
+  &:hover {
+    color: #e9e9e9;
+    background-color: #ff5e00;
+    border-color: #ff5e00;
+  }
+}
+
+.container-home {
+  position: relative;
+  height: calc(100vh - 57px);
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+  background: linear-gradient(to bottom, #ffffff 3%, rgb(51, 51, 51) 100%);
+}
+
+.center-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  // background-color: rgba(255, 255, 255, 0.1);
+}
+
+.error-message {
+  background-color: #ff5e00;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.btn-signup {
+  font-weight: 500;
+  color: #ff5e00;
+}
+
+// .cat-img {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   margin: 0 auto;
+//   width: 50%;
+// }
+
+.btn-secret {
+  font-weight: 500;
+  font-size: 1.5rem;
+  transition: 300ms all ease-in-out;
+  &:hover {
+    color: #e9e9e9;
+    background-color: #ff5e00;
+  }
+}
+
+.txt-rotate {
+  position: relative;
+  left: -65%;
+  transform: rotate(270deg);
+}
